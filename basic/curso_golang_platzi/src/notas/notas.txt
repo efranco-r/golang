@@ -1,0 +1,14 @@
+#Imprimir todas las variables de contexto que usa GO
+go env
+
+#Instalar tour (Este modulo nos da un tour sobre lo que es GOLANG :=)
+# 1. MOs paramos en el GOPATH
+# 2. Obtenemos el modulo haciendo uso del sgte comando
+go get golang.org/x/website/tour@latest
+# 3.  Obtenemos información del modulo
+tour -H
+# 4. Ejecutamos el modulo
+tour
+
+# La información del paquete la podremos encontrar en:
+$GOPATH\pkg\mod\golang.org\
